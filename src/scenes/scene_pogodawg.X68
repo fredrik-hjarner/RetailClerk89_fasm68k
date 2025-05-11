@@ -56,172 +56,172 @@ ScenePogoDawg:
 	; floor
 	dc.l	PatternTileFloorSimple
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000000001	; base pattern
+	dc.w	 0000000000000001b	; base pattern
 	dc.w	$000D	; repeat 14 times
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; right entrance - top
 	dc.l	PatternSideEntranceRight
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000011	; base pattern
+	dc.w	 1000000000000011b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$004E0000	; initial drawing location
 
 	; right entrance - bottom
 	dc.l	PatternSideEntranceRight
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000011	; base pattern
+	dc.w	 1000000000000011b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$09000000+$004E0000	; initial drawing location
 
 	; left side - top
 	dc.l	PatternSideEntranceLeft
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000011	; base pattern
+	dc.w	 1000000000000011b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A	; initial drawing location
 
 	; left side - bottom
 	dc.l	PatternSideEntranceLeft
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000011	; base pattern
+	dc.w	 1000000000000011b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$09000000	; initial drawing location
 
 	; south wall
 	dc.l	PatternFrameSouthClosed
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000001101	; base pattern
+	dc.w	 1000000000001101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D800000	; initial drawing location
 
 	; top
 	dc.l	PatternFrameTop
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000001000	; base pattern
+	dc.w	 1000000000001000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A	; initial drawing location
 
 	; main counter
 	dc.l	PatternCounterLow24x8
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000010101	; base pattern
+	dc.w	 0010000000010101b	; base pattern
 	dc.w	$0017	; repeat 24 times
 	dc.l	VDP_VRAM_WRITE_B+$000A0000+$00800000	; initial drawing location
 
 	; south counter
 	dc.l	PatternCounterLow272x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000010101	; base pattern
+	dc.w	 0010000000010101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$000A0000+$0C800000	; initial drawing location
 
 	; counter seating
 	dc.l	Pattern16x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101000	; base pattern
+	dc.w	 0010000000101000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$00180000+$0B800000	; initial drawing location
 
 	dc.l	Pattern16x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101000	; base pattern
+	dc.w	 0010000000101000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$00240000+$0B800000	; initial drawing location
 
 	dc.l	Pattern16x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101000	; base pattern
+	dc.w	 0010000000101000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$00300000+$0B800000	; initial drawing location
 
 	dc.l	Pattern16x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101000	; base pattern
+	dc.w	 0010000000101000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$003C0000+$0B800000	; initial drawing location
 
 	dc.l	Pattern16x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101000	; base pattern
+	dc.w	 0010000000101000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$00480000+$0B800000	; initial drawing location
 
 	; tables
 	dc.l	PatternCounterLow24x40
-	dc.w	%0010000000010101	; base pattern
+	dc.w	 0010000000010101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$001C0000+$00800000	; initial drawing location
 
 	dc.l	PatternBenchSeatLeft
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100100	; base pattern
+	dc.w	 0010000000100100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$001A0000+$00800000	; initial drawing location
 
 	dc.l	PatternBenchSeatRight
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100100	; base pattern
+	dc.w	 0010000000100100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00220000+$00800000	; initial drawing location
 
 	dc.l	PatternCounterLow24x40
-	dc.w	%0010000000010101	; base pattern
+	dc.w	 0010000000010101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$002E0000+$00800000	; initial drawing location
 
 	dc.l	PatternBenchSeatLeft
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100100	; base pattern
+	dc.w	 0010000000100100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$002C0000+$00800000	; initial drawing location
 
 	dc.l	PatternBenchSeatRight
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100100	; base pattern
+	dc.w	 0010000000100100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00340000+$00800000	; initial drawing location
 
 	dc.l	PatternCounterLow24x40
-	dc.w	%0010000000010101	; base pattern
+	dc.w	 0010000000010101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$00400000+$00800000	; initial drawing location
 
 	dc.l	PatternBenchSeatLeft
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100100	; base pattern
+	dc.w	 0010000000100100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$003E0000+$00800000	; initial drawing location
 
 	dc.l	PatternBenchSeatRight
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100100	; base pattern
+	dc.w	 0010000000100100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00460000+$00800000	; initial drawing location
 
 	; registers
 	dc.l	Pattern16x16	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000101100	; base pattern
+	dc.w	 1100000000101100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$000A0000+$03000000	; initial drawing location
 
 	dc.l	Pattern16x16	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000101100	; base pattern
+	dc.w	 1100000000101100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$000A0000+$08000000	; initial drawing location
 
 	; trash on tables & counter
 	dc.l	Pattern16x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000110000	; base pattern
+	dc.w	 1100000000110000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$001E0000+$0C800000	; initial drawing location
 
 	dc.l	Pattern16x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000110000	; base pattern
+	dc.w	 1100000000110000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00420000+$00800000	; initial drawing location
 
@@ -237,63 +237,63 @@ ScenePogoDawg:
 
 	dc.w	OBJ_SCENE_TABLE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0101000011101000
+	dc.w	 0101000011101000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100000010001000
+	dc.w	 0100000010001000b
 
 	dc.w	OBJ_SCENE_TABLE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0101000100110000
+	dc.w	 0101000100110000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100000010001000
+	dc.w	 0100000010001000b
 
 	dc.w	OBJ_SCENE_TABLE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0101000101111000
+	dc.w	 0101000101111000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100000010001000
+	dc.w	 0100000010001000b
 
 	dc.w	OBJ_SCENE_TRASH
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011010011110000
+	dc.w	 0011010011110000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0011000101001000
+	dc.w	 0011000101001000b
 
 	dc.w	OBJ_NPC_POGODAWG_STAFF
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000010101010
+	dc.w	 0011000010101010b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0011100010110000
+	dc.w	 0011100010110000b
 
 	dc.w	OBJ_SCENE_REGISTER
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000010101010
+	dc.w	 0011000010101010b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0011000100000000
+	dc.w	 0011000100000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	;---------------------------------------------------------------------------
 	; collision data

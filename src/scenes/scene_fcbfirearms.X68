@@ -48,93 +48,93 @@ SceneFCBFirearms:
 	; stone floor
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000011010	; base pattern
+	dc.w	 0000000000011010b	; base pattern
 	dc.w	$0006	; repeat 7 times
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; north frame
 	dc.l	PatternFCBFrameNorthEast	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000001	; base pattern
+	dc.w	 1000000000000001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A	; initial drawing location
 
 	; west frame
 	dc.l	PatternFCBFrameSide	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000001	; base pattern
+	dc.w	 1000000000000001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$004E0000	; initial drawing location
 
 	; wood path - east-west
 	dc.l	PatternFCBFloorH	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000001010	; base pattern
+	dc.w	 0000000000001010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$09800000	; initial drawing location
 
 	; wood path - north-south
 	dc.l	PatternFCBFloorVNorth	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000001010	; base pattern
+	dc.w	 0000000000001010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$0B800000+$00380000	; initial drawing location
 
 	; center
 	dc.l	Pattern32x16	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000101010	; base pattern
+	dc.w	 1010000000101010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D000000	; initial drawing location
 
 	dc.l	Pattern32x16	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000101010	; base pattern
+	dc.w	 1010000000101010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D000000+$00020000	; initial drawing location
 
 	dc.l	Pattern32x16	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000101010	; base pattern
+	dc.w	 1010000000101010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D000000+$000A0000	; initial drawing location
 
 	dc.l	Pattern32x16	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000101010	; base pattern
+	dc.w	 1010000000101010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D000000+$00120000	; initial drawing location
 
 	; back display
 	dc.l	PatternFCBFirearmsBackDisplay	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000000110010	; base pattern
+	dc.w	 0100000000110010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$00800000+$000E0000	; initial drawing location
 
 	; counter
 	dc.l	PatternFCBFirearmsCounterSide	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000110010	; base pattern
+	dc.w	 1100000000110010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$000E0000	; initial drawing location
 
 	dc.l	PatternFCBFirearmsCounterSide	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000110010	; base pattern
+	dc.w	 1100000000110010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$004C0000	; initial drawing location
 
 	dc.l	PatternFCBFirearmsCounterFront	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000110010	; base pattern
+	dc.w	 1100000000110010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$03800000+$000E0000	; initial drawing location
 
 	; front display
 	dc.l	PatternFCBFirearmsFrontDisplay	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000000110010	; base pattern
+	dc.w	 0100000000110010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$04000000+$000E0000	; initial drawing location
 
@@ -150,63 +150,63 @@ SceneFCBFirearms:
 
 	dc.w	OBJ_NPC_FCBFIREARMS_STAFF
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000011011100
+	dc.w	 0011000011011100b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0001000011010000
+	dc.w	 0001000011010000b
 
 	dc.w	OBJ_SCENE_GUNCASE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1111111010111010
+	dc.w	 1111111010111010b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0001000011010000
+	dc.w	 0001000011010000b
 
 	dc.w	OBJ_SCENE_GUNCASE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1111111100111001
+	dc.w	 1111111100111001b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0001000011010000
+	dc.w	 0001000011010000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	;---------------------------------------------------------------------------
 	; collision data

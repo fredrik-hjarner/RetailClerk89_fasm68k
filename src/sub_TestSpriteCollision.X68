@@ -48,7 +48,7 @@ TestUpCollision:
 TestUpCollisionLeftEdgeSetup:
 	move.w	d5,d3	; copy y position to d3 because it is manipulated
 	sub.w	#SPRITE_COLLISION_UP,d3	; test up from sprite
-	andi.b	#%11111000,d3	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d3	; clear bits 0-2 to round to nearest power of 8
 	cmpi.w	#MAP_MID_X,d6	; is sprite on the left or right side of the screen?
 	blt.s	TestUpCollisionLeftEdge	; check if crossing the boundary
 	addq	#$0004,d3		; on the right side, use 2nd lword for the column
@@ -71,7 +71,7 @@ TestUpCollisionLeftEdge:
 TestUpCollisionRightEdgeSetup:
 	move.w	d5,d3	; copy y position to d3 because it is manipulated
 	sub.w	#SPRITE_COLLISION_UP,d3	; test up from sprite
-	andi.b	#%11111000,d3	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d3	; clear bits 0-2 to round to nearest power of 8
 	add.w	#DEFAULT_SPRITE_WIDTH,d6	; move to right edge of sprite
 	cmpi.w	#MAP_MID_X,d6	; is right half on right side of the screen?
 	blt.s	TestUpCollisionRightEdge	; check if crossing the boundary
@@ -99,7 +99,7 @@ TestDownCollision:
 TestDownCollisionLeftEdgeSetup:
 	move.w	d5,d3	; copy y position to d3 because it is manipulated
 	add.w	#SPRITE_COLLISION_DOWN,d3	; test down from sprite
-	andi.b	#%11111000,d3	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d3	; clear bits 0-2 to round to nearest power of 8
 	cmpi.w	#MAP_MID_X,d6	; is sprite on the left or right side of the screen?
 	blt.s	TestDownCollisionLeftEdge	; check if crossing the boundary
 	add.w	#$0004,d3		; on the right side, use 2nd lword for the column
@@ -122,7 +122,7 @@ TestDownCollisionLeftEdge:
 TestDownCollisionRightEdgeSetup:
 	move.w	d5,d3	; copy y position to d3 because it is manipulated
 	add.w	#SPRITE_COLLISION_DOWN,d3	; test down from sprite
-	andi.b	#%11111000,d3	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d3	; clear bits 0-2 to round to nearest power of 8
 	add.w	#DEFAULT_SPRITE_WIDTH,d6	; move to right edge of sprite
 	cmpi.w	#MAP_MID_X,d6	; is sprite on the left or right side of the screen?
 	blt.s	TestDownCollisionRightEdge	; check if crossing the boundary
@@ -152,8 +152,8 @@ TestRightSetup:
 	; d5 will have bottom edge, d3 will have bottom edge
 	move.w	d5,d3	; copy y position to d3 to store bottom edge
 	add.w	#(DEFAULT_SPRITE_HEIGHT/2),d3	; move d3 to the bottom edge
-	andi.b	#%11111000,d5	; clear bits 0-2 to round to nearest power of 8
-	andi.b	#%11111000,d3	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d5	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d3	; clear bits 0-2 to round to nearest power of 8
 	add.w	#SPRITE_COLLISION_RIGHT,d6	; test right from sprite
 	cmpi.w	#MAP_MID_X,d6	; is collision on left or right side of the screen?
 	blt.s	TestRightCollisionTopEdge ; left side, go directly to collision test
@@ -193,8 +193,8 @@ TestLeftCollisionSetup:
 	; d5 will have top edge, d3 will have bottom edge
 	move.w	d5,d3	; copy y position to d3 to store bottom edge
 	add.w	#(DEFAULT_SPRITE_HEIGHT/2),d3	; move d3 to the bottom edge
-	andi.b	#%11111000,d5	; clear bits 0-2 to round to nearest power of 8
-	andi.b	#%11111000,d3	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d5	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d3	; clear bits 0-2 to round to nearest power of 8
 	sub.w	#SPRITE_COLLISION_LEFT,d6	; test left from sprite
 	cmpi.w	#MAP_MID_X,d6	; is collision on left or right side of the screen?
 	blt.s	TestLeftCollisionTopEdge ; left side, go directly to collision test

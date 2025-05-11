@@ -44,27 +44,27 @@ SceneFlashback2000:
 	; background
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000000001	; base pattern
+	dc.w	 1010000000000001b	; base pattern
 	dc.w	$0004	; repeat 5 times
 	dc.l	VDP_VRAM_WRITE_B+$00000000	; initial drawing location
 
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000000001	; base pattern
+	dc.w	 1100000000000001b	; base pattern
 	dc.w	$0004	; repeat 5 times
 	dc.l	VDP_VRAM_WRITE_B+$09000000	; initial drawing location
 
 	; frame
 	dc.l	PatternFlashbackFrame	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000010001	; base pattern
+	dc.w	 1010000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$00100000	; initial drawing location
 
 	; picture
 	dc.l	PatternFlashbackPicture2000	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000011001	; base pattern
+	dc.w	 1010000000011001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$00120000+$00800000	; initial drawing location
 

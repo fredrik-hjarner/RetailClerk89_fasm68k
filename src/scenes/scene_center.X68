@@ -52,74 +52,74 @@ SceneCenter:
 	; main floor
 	dc.l	PatternTileFloor
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000010010	; base pattern
+	dc.w	 0010000000010010b	; base pattern
 	dc.w	$000B	; repeat 12 times
 	dc.l	VDP_VRAM_WRITE_B+$02000000	; initial drawing location
 
 	; north store frame
 	dc.l	PatternLargeStoreFront ; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000000000	; base pattern
+	dc.w	 0000000000000000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; north floor
 	dc.l	PatternFloor48x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000000010110	; base pattern
+	dc.w	 0100000000010110b	; base pattern
 	dc.w	$0001	; repeat once
 	dc.l	VDP_VRAM_WRITE_B+$00220000	; initial drawing location
 
 	; north store banner
 	dc.l	PatternBanner ; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000011010	; base pattern
+	dc.w	 1100000000011010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00200000	; initial drawing location
 
 	; plants
 	dc.l	Pattern24x32 ; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101010	; base pattern
+	dc.w	 0010000000101010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$00020000	; initial drawing location
 
 	dc.l	Pattern24x32 ; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101010	; base pattern
+	dc.w	 0010000000101010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$00120000	; initial drawing location
 
 	dc.l	Pattern24x32 ; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101010	; base pattern
+	dc.w	 0010000000101010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$00380000	; initial drawing location
 
 	dc.l	Pattern24x32 ; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101010	; base pattern
+	dc.w	 0010000000101010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$00480000	; initial drawing location
 
 	; info desk low
 	dc.l	PatternInfoDeskLow ; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000110110	; base pattern
+	dc.w	 0010000000110110b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$08000000+$00140000	; initial drawing location
 
 	; info desk high
 	dc.l	PatternInfoDeskHigh ; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000110110	; base pattern
+	dc.w	 1010000000110110b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$06000000+$00140000	; initial drawing location
 
 	; info desk sign
 	dc.l	PatternMallExteriorSign ; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000001001010	; base pattern
+	dc.w	 1000000001001010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$05000000+$00180000	; initial drawing location
 
@@ -135,39 +135,39 @@ SceneCenter:
 
 	dc.w	OBJ_SCENE_PLANT
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000010001000
+	dc.w	 0011000010001000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100000010001000
+	dc.w	 0100000010001000b
 
 	dc.w	OBJ_SCENE_PLANT_ALT
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000011001000
+	dc.w	 0011000011001000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100000010001000
+	dc.w	 0100000010001000b
 
 	dc.w	OBJ_SCENE_PLANT
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000101100000
+	dc.w	 0011000101100000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100000010001000
+	dc.w	 0100000010001000b
 
 	dc.w	OBJ_SCENE_PLANT
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000110100000
+	dc.w	 0011000110100000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100000010001000
+	dc.w	 0100000010001000b
 
 	dc.w	OBJ_SCENE_INFODESK
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1010000011010000
+	dc.w	 1010000011010000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0010000011111000
+	dc.w	 0010000011111000b
 
 	dc.w	OBJ_SCENE_INFODESK
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1010000100100000
+	dc.w	 1010000100100000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100000011111000
+	dc.w	 0100000011111000b
 
 	dc.w	OBJ_NOTHING
 	dc.w	$0000

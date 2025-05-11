@@ -48,97 +48,97 @@ SceneTLodge:
 	; floor
 	dc.l	PatternTileFloor	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000000001	; base pattern
+	dc.w	 0000000000000001b	; base pattern
 	dc.w	$001F	; repeat 32 times
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; right side
 	dc.l	PatternSideClosed
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000101	; base pattern
+	dc.w	 1000000000000101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$004E0000	; initial drawing location
 
 	; top entrance - left side
 	dc.l	PatternFrameTopOpenLeft
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000101	; base pattern
+	dc.w	 1000000000000101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A	; initial drawing location
 
 	; top entrance - right side
 	dc.l	PatternFrameTopOpenRight
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000101	; base pattern
+	dc.w	 1000000000000101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00360000	; initial drawing location
 
 	; left side
 	dc.l	PatternSideClosed
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000101	; base pattern
+	dc.w	 1000000000000101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00800000	; initial drawing location
 
 	; south wall
 	dc.l	PatternFrameSouthClosed
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000101	; base pattern
+	dc.w	 1000000000000101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D800000	; initial drawing location
 
 	; counter
 	dc.l	PatternCounter48x80
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000001101	; base pattern
+	dc.w	 0010000000001101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$04800000	; initial drawing location
 
 	; top left table
 	dc.l	Pattern96x24
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100000	; base pattern
+	dc.w	 0010000000100000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$00800000	; initial drawing location
 
 	; top right table
 	dc.l	PatternTLodgeRightTable
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100000	; base pattern
+	dc.w	 0010000000100000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00360000+$00800000	; initial drawing location
 
 	; rc track
 	dc.l	PatternTLodgeRCTrack
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100000	; base pattern
+	dc.w	 0010000000100000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$001A0000+$04800000	; initial drawing location
 
 	; car on track
 	dc.l	Pattern16x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000001101110	; base pattern
+	dc.w	 0010000001101110b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00280000+$05800000	; initial drawing location
 
 	; computer
 	dc.l	Pattern24x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000001011100	; base pattern
+	dc.w	 1100000001011100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00420000+$04800000	; initial drawing location
 
 	dc.l	Pattern24x32
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000001100010	; base pattern
+	dc.w	 0100000001100010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00420000+$05800000	; initial drawing location
 
 	; register
 	dc.l	Pattern16x16	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000011100	; base pattern
+	dc.w	 0010000000011100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00080000+$05800000	; initial drawing location
 
@@ -154,63 +154,63 @@ SceneTLodge:
 
 	dc.w	OBJ_SCENE_REGISTER
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0010010010100000
+	dc.w	 0010010010100000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0010100011011000
+	dc.w	 0010100011011000b
 
 	dc.w	OBJ_SCENE_RADIO
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0111100010010000
+	dc.w	 0111100010010000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0001000010010000
+	dc.w	 0001000010010000b
 
 	dc.w	OBJ_SCENE_CASSETTE_PLAYER
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0010010011001000
+	dc.w	 0010010011001000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0001000010010000
+	dc.w	 0001000010010000b
 
 	dc.w	OBJ_SCENE_CELL_PHONE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1000000101100000
+	dc.w	 1000000101100000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0001000010010000
+	dc.w	 0001000010010000b
 
 	dc.w	OBJ_SCENE_OFFICEPHONE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0010000110100011
+	dc.w	 0010000110100011b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0001000010010000
+	dc.w	 0001000010010000b
 
 	dc.w	OBJ_SCENE_RCCAR
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0010100100011000
+	dc.w	 0010100100011000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0010100011010010
+	dc.w	 0010100011010010b
 
 	dc.w	OBJ_SCENE_COMPUTER
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0010111110001000
+	dc.w	 0010111110001000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0011000011010000
+	dc.w	 0011000011010000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	;---------------------------------------------------------------------------
 	; collision data

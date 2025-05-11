@@ -50,7 +50,7 @@ FindActionTargetObjectLoop:
 	; test if sprite x is between left and right edge
 	move.w	(2,a0),d2	; copy word 1 (x and width)
 	move.w	d2,d1	; use d1 for width
-	and.w	#%0000000111111111,d2	; clear bits[9-15]
+	and.w	#0000000111111111b,d2	; clear bits[9-15]
 	cmp.w	d2,d4	; (htx>=x1)
 	blt.w	FindActionTargetObjectLoopDbra ; loop if sprite x < object left
 	; need to shift 9 bits right
@@ -62,7 +62,7 @@ FindActionTargetObjectLoop:
 	; test if sprite y is between top and bottom edge
 	move.w	(4,a0),d2	; copy word 2 (y and width)
 	move.w	d2,d1	; use d1 for height
-	and.w	#%0000000111111111,d2	; clear bits[9-15]
+	and.w	#0000000111111111b,d2	; clear bits[9-15]
 	cmp.w	d2,d5	; (hty>y0)
 	blt.w	FindActionTargetObjectLoopDbra ; loop if sprite y < object top
 	; need to shift 9 bits right

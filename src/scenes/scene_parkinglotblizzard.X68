@@ -56,69 +56,69 @@ SceneParkingLotBlizzard:
 	; north mall floor
 	dc.l	PatternTileFloor	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000010101	; base pattern
+	dc.w	 0010000000010101b	; base pattern
 	dc.w	$0001	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; snow
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000000001	; base pattern
+	dc.w	 0010000000000001b	; base pattern
 	dc.w	$000B	; repeat 12 times
 	dc.l	VDP_VRAM_WRITE_B+$02000000	; initial drawing location
 
 	; mall exterior - sign
 	dc.l	PatternMallExteriorSign	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000110001	; base pattern
+	dc.w	 1000000000110001b	; base pattern
 	dc.w	$0000	; repeat 0 times
 	dc.l	VDP_VRAM_WRITE_B+$00180000	; initial drawing location
 
 	; mall exterior - left side
 	dc.l	PatternMallExteriorSide	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; repeat 0 times
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; mall exterior - right side
 	dc.l	PatternMallExteriorSide	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; repeat 0 times
 	dc.l	VDP_VRAM_WRITE_B+$00380000	; initial drawing location
 
 	; left edge
 	dc.l	PatternParkingLotEdgeLeft	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000011001	; base pattern
+	dc.w	 0010000000011001b	; base pattern
 	dc.w	$0002	; repeat 2 times
 	dc.l	VDP_VRAM_WRITE_B+$02000000	; initial drawing location
 
 	; right edge
 	dc.l	PatternParkingLotEdgeRight	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000011001	; base pattern
+	dc.w	 0010000000011001b	; base pattern
 	dc.w	$0002	; repeat 2 times
 	dc.l	VDP_VRAM_WRITE_B+$004C0000+$02000000	; initial drawing location
 
 	; car
 	dc.l	Pattern88x48	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000001000101	; base pattern
+	dc.w	 0010000001000101b	; base pattern
 	dc.w	$0000	; repeat 0 times
 	dc.l	VDP_VRAM_WRITE_B+$00360000+$06000000	; initial drawing location
 
 	; falling snow
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000110101	; base pattern
+	dc.w	 1010000000110101b	; base pattern
 	dc.w	$000B	; repeat 12 times
 	dc.l	VDP_VRAM_WRITE_A+$02000000	; initial drawing location
 
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000110101	; base pattern
+	dc.w	 1010000000110101b	; base pattern
 	dc.w	$0000	; repeat 0 times
 	dc.l	VDP_VRAM_WRITE_A	; initial drawing location
 
@@ -134,9 +134,9 @@ SceneParkingLotBlizzard:
 
 	dc.w	OBJ_SCENE_DANICAR
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1011000101011001
+	dc.w	 1011000101011001b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0101010011100010
+	dc.w	 0101010011100010b
 
 	dc.w	OBJ_NOTHING
 	dc.w	$0000

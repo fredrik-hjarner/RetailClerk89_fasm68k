@@ -2,28 +2,28 @@
 	; entry 0 - transparency
 	;---------------------------------------------------------------------------
 	;		 0000BBBSGGGSRRRS
-	dc.w	%0000111000001110
+	dc.w	 0000111000001110b
 	;---------------------------------------------------------------------------
 	; entries 1-A - workshop
 	;---------------------------------------------------------------------------
 	;		 0000BBBSGGGSRRRS
-	dc.w	%0000010001100000	; roof - dark
-	dc.w	%0000011010000010	; roof - light
-	dc.w	%0000111011101100	; roof - accent
-	dc.w	%0000101010101010	; shadow
-	dc.w	%0000100010101100	; wall
-	dc.w	%0000000001001000	; wood beam - accent
-	dc.w	%0000001000100100	; wood beam - primary
-	dc.w	%0000010001101000	; window & door frame
-	dc.w	%0000000000000000	; door inside
-	dc.w	%0000100010001000	; window inside
+	dc.w	 0000010001100000b	; roof - dark
+	dc.w	 0000011010000010b	; roof - light
+	dc.w	 0000111011101100b	; roof - accent
+	dc.w	 0000101010101010b	; shadow
+	dc.w	 0000100010101100b	; wall
+	dc.w	 0000000001001000b	; wood beam - accent
+	dc.w	 0000001000100100b	; wood beam - primary
+	dc.w	 0000010001101000b	; window & door frame
+	dc.w	 0000000000000000b	; door inside
+	dc.w	 0000100010001000b	; window inside
 	;---------------------------------------------------------------------------
 	; entries B-F - pole
 	;---------------------------------------------------------------------------
 	;		 0000BBBSGGGSRRRS
-	dc.w	%0000111011101110	; pole main color
-	dc.w	%0000010010101110	; orb - main
-	dc.w	%0000011001101100	; outline
-	dc.w	%0000000000001110	; stripes
-	dc.w	%0000001010101100	; orb - outline
+	dc.w	 0000111011101110b	; pole main color
+	dc.w	 0000010010101110b	; orb - main
+	dc.w	 0000011001101100b	; outline
+	dc.w	 0000000000001110b	; stripes
+	dc.w	 0000001010101100b	; orb - outline
 

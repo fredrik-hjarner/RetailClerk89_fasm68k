@@ -60,7 +60,7 @@ SceneEWHall:
 	; north floor
 	dc.l	PatternTileFloorSimple	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000100010	; base pattern
+	dc.w	 0000000000100010b	; base pattern
 	dc.w	$0001	; repeat 2 times
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
@@ -83,21 +83,21 @@ SceneEWHall:
 	; main floor
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101100	; base pattern
+	dc.w	 0010000000101100b	; base pattern
 	dc.w	$0004	; repeat 5 times
 	dc.l	VDP_VRAM_WRITE_B+$03000000	; initial drawing location
 
 	; top border
 	dc.l	PatternWoodFloorH	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100100	; base pattern
+	dc.w	 0010000000100100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$02000000	; initial drawing location
 
 	; bottom border
 	dc.l	PatternWoodFloorH	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100100	; base pattern
+	dc.w	 0010000000100100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$0C800000	; initial drawing location
 
@@ -112,39 +112,39 @@ SceneEWHall:
 	; south store frame - left side
 	dc.l	PatternHallSouthFrameLeft	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000000001	; base pattern
+	dc.w	 1100000000000001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D800000	; initial drawing location
 
 	; south store frame - right side
 	dc.l	PatternHallSouthFrameRight	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000000001	; base pattern
+	dc.w	 1100000000000001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D800000+$00360000	; initial drawing location
 
 	; plants
 	dc.l	Pattern32x40	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000001001100	; base pattern
+	dc.w	 1010000001001100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$05000000+$00100000	; initial drawing location
 
 	dc.l	Pattern32x24	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000001100000	; base pattern
+	dc.w	 0010000001100000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$07800000+$00100000	; initial drawing location
 
 	dc.l	Pattern32x40	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000001001100	; base pattern
+	dc.w	 1010000001001100b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$05000000+$00380000	; initial drawing location
 
 	dc.l	Pattern32x24	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000001100000	; base pattern
+	dc.w	 0010000001100000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$07800000+$00380000	; initial drawing location
 
@@ -162,15 +162,15 @@ SceneEWHall:
 
 	dc.w	OBJ_SCENE_TREE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0100000011000000
+	dc.w	 0100000011000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0011000011110100
+	dc.w	 0011000011110100b
 
 	dc.w	OBJ_SCENE_TREE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0100000101100000
+	dc.w	 0100000101100000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0011000011110100
+	dc.w	 0011000011110100b
 
 	dc.w	OBJ_NOTHING
 	dc.w	$0000

@@ -64,97 +64,97 @@ SceneEEHall:
 	; north floor
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000111001	; base pattern
+	dc.w	 0000000000111001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; main floor
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000001001	; base pattern
+	dc.w	 0010000000001001b	; base pattern
 	dc.w	$0004	; repeat 5 times
 	dc.l	VDP_VRAM_WRITE_B+$03000000	; initial drawing location
 
 	; top border
 	dc.l	PatternWoodFloorH	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000000001	; base pattern
+	dc.w	 0010000000000001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$02000000	; initial drawing location
 
 	; bottom border
 	dc.l	PatternWoodFloorH	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000000001	; base pattern
+	dc.w	 0010000000000001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$0C800000	; initial drawing location
 
 	; store front - left
 	dc.l	PatternWindowAngledLeft	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000011001	; base pattern
+	dc.w	 0000000000011001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A	; initial drawing location
 
 	; store front - center
 	dc.l	PatternWindowAngledCenter	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000011001	; base pattern
+	dc.w	 1000000000011001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$001A0000	; initial drawing location
 
 	; store front - right
 	dc.l	PatternWindowAngledRight	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000011001	; base pattern
+	dc.w	 0000000000011001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00360000	; initial drawing location
 
 	; south store frame - left side
 	dc.l	PatternHallSouthFrameLeft	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000101101		; base pattern
+	dc.w	 1100000000101101b		; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D800000	; initial drawing location
 
 	; south store frame - right side
 	dc.l	PatternHallSouthFrameRight	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1100000000101101		; base pattern
+	dc.w	 1100000000101101b		; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D800000+$00360000	; initial drawing location
 
 	; south store floor
 	dc.l	PatternTileFloor	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000000110101		; base pattern
+	dc.w	 0100000000110101b		; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_B+$0D800000	; initial drawing location
 
 	; plant
 	dc.l	PatternLongPlantLow	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000001001001		; base pattern
+	dc.w	 0010000001001001b		; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$07000000+$000C0000	; initial drawing location
 
 	dc.l	PatternLongPlantHigh	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000001001001		; base pattern
+	dc.w	 1010000001001001b		; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$06000000+$000C0000	; initial drawing location
 
 	; benches
 	dc.l	PatternBenchSimpleLonger	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000001011001
+	dc.w	 0010000001011001b
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$08000000+$000C0000	; initial drawing location
 
 	; arcade logo
 	dc.l	Pattern72x16	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000001011101
+	dc.w	 1000000001011101b
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$001E0000	; initial drawing location
 
@@ -170,27 +170,27 @@ SceneEEHall:
 
 	dc.w	OBJ_SCENE_BENCH
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1110010010110000
+	dc.w	 1110010010110000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0010000100000000
+	dc.w	 0010000100000000b
 
 	dc.w	OBJ_SCENE_BENCH
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1110010100100010
+	dc.w	 1110010100100010b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0010000100000000
+	dc.w	 0010000100000000b
 
 	dc.w	OBJ_SCENE_PLANT
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1110010010110000
+	dc.w	 1110010010110000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100000011100000
+	dc.w	 0100000011100000b
 
 	dc.w	OBJ_SCENE_PLANT
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1110010100100010
+	dc.w	 1110010100100010b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100000011100000
+	dc.w	 0100000011100000b
 
 	dc.w	OBJ_NOTHING
 	dc.w	$0000

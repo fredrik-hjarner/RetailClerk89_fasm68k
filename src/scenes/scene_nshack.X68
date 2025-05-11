@@ -52,112 +52,112 @@ SceneNShack:
 	; floor
 	dc.l	PatternTileFloorSimple
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000000001	; base pattern
+	dc.w	 0000000000000001b	; base pattern
 	dc.w	$000D	; repeat 14 times
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; left entrance - top
 	dc.l	PatternSideEntranceLeft
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000011	; base pattern
+	dc.w	 1000000000000011b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A	; initial drawing location
 
 	; left entrance - bottom
 	dc.l	PatternSideEntranceLeft
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000000011	; base pattern
+	dc.w	 1000000000000011b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$09000000	; initial drawing location
 
 	; south wall
 	dc.l	PatternFrameSouthClosed
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000001101	; base pattern
+	dc.w	 1000000000001101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$0D800000	; initial drawing location
 
 	; right side
 	dc.l	PatternSideClosed
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000001101	; base pattern
+	dc.w	 1000000000001101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$004E0000	; initial drawing location
 
 	; top
 	dc.l	PatternFrameTop
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000001000	; base pattern
+	dc.w	 1000000000001000b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A	; initial drawing location
 
 	; shelves under counter
 	dc.l	Pattern3Tile80x8	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000011111	; base pattern
+	dc.w	 0000000000011111b	; base pattern
 	dc.w	$0001	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$001E0000+$04000000	; initial drawing location
 
 	; counter
 	dc.l	PatternCounterHigh80x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1000000000010101	; base pattern
+	dc.w	 1000000000010101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$001E0000+$02800000	; initial drawing location
 
 	dc.l	PatternCounterLow80x16
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010101	; base pattern
+	dc.w	 0000000000010101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$001E0000+$03800000	; initial drawing location
 
 	; display cases
 	dc.l	PatternNShackDisplayCaseHigh
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000100010	; base pattern
+	dc.w	 1010000000100010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$02000000	; initial drawing location
 
 	dc.l	PatternNShackDisplayCaseLow
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100010	; base pattern
+	dc.w	 0010000000100010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$02800000	; initial drawing location
 
 	dc.l	PatternNShackDisplayCaseHigh
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%1010000000100010	; base pattern
+	dc.w	 1010000000100010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00320000+$02000000	; initial drawing location
 
 	dc.l	PatternNShackDisplayCaseLow
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000100010	; base pattern
+	dc.w	 0010000000100010b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00320000+$02800000	; initial drawing location
 
 	; barrels
 	dc.l	Pattern32x32
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000001011101	; base pattern
+	dc.w	 0100000001011101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00320000+$07000000	; initial drawing location
 
 	dc.l	Pattern32x32
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000001011101	; base pattern
+	dc.w	 0100000001011101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00400000+$07000000	; initial drawing location
 
 	dc.l	Pattern32x32
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000001011101	; base pattern
+	dc.w	 0100000001011101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00160000+$07000000	; initial drawing location
 
 	dc.l	Pattern32x32
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000001011101	; base pattern
+	dc.w	 0100000001011101b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00080000+$07000000	; initial drawing location
 
@@ -173,63 +173,63 @@ SceneNShack:
 
 	dc.w	OBJ_SCENE_NUTCASE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1110000010001000
+	dc.w	 1110000010001000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100100010100100
+	dc.w	 0100100010100100b
 
 	dc.w	OBJ_SCENE_NUTCASE
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1110000101001010
+	dc.w	 1110000101001010b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100100010100100
+	dc.w	 0100100010100100b
 
 	dc.w	OBJ_SCENE_NUTBARREL
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000010100000
+	dc.w	 0011000010100000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0011000011110000
+	dc.w	 0011000011110000b
 
 	dc.w	OBJ_SCENE_NUTBARREL
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000011011000
+	dc.w	 0011000011011000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0011000011110000
+	dc.w	 0011000011110000b
 
 	dc.w	OBJ_SCENE_NUTBARREL
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000101001000
+	dc.w	 0011000101001000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0011000011110000
+	dc.w	 0011000011110000b
 
 	dc.w	OBJ_SCENE_NUTBARREL
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000110000000
+	dc.w	 0011000110000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0011000011110000
+	dc.w	 0011000011110000b
 
 	dc.w	OBJ_NPC_NSHACK_STAFF
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0011000100010100
+	dc.w	 0011000100010100b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100100010100100
+	dc.w	 0100100010100100b
 
 	dc.w	OBJ_SCENE_COUNTER
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%1010000011111000
+	dc.w	 1010000011111000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0100100010100100
+	dc.w	 0100100010100100b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	dc.w	OBJ_NOTHING
 	; 		%wwwwwwwxxxxxxxxx
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 	; 		%hhhhhhhyyyyyyyyy
-	dc.w	%0000000000000000
+	dc.w	 0000000000000000b
 
 	;---------------------------------------------------------------------------
 	; collision data

@@ -49,7 +49,7 @@ BuildStatusScreenObjectiveTextLoop:
 .1
 	; update d6 to point to the tile ID
 	sub.w	#$20,d6	; subtract 32 to get the character index
-	add.w	#DIALOG_BASE_TILE_LOW+%0010000000000000,d6	; add the base tile
+	add.w	#DIALOG_BASE_TILE_LOW+0010000000000000b,d6	; add the base tile
 	move.l	(MEM_DIALOG_VDP),(VDP_CONTROL)	; set VDP address
 	move.w  d6,(VDP_DATA)	; copy the character to VDP
 	; draw the next character
@@ -122,10 +122,10 @@ BuildStatusScreenStoreKeysLoopNextChar:
 	sub.w	#$20,d6	; subtract 32 to get the character index
 	btst.l	d7,d5	; does the player have this key?
 	beq.s	.1	; branch if player does not have the key
-	add.w	#DIALOG_BASE_TILE_LOW+%0010000000000000,d6	; add the base tile
+	add.w	#DIALOG_BASE_TILE_LOW+0010000000000000b,d6	; add the base tile
 	bra.s	.2
 .1
-	add.w	#DIALOG_BASE_TILE_LOW+%0100000000000000,d6	; add the base tile
+	add.w	#DIALOG_BASE_TILE_LOW+0100000000000000b,d6	; add the base tile
 .2
 	move.l	(MEM_DIALOG_VDP),(VDP_CONTROL)	; set VDP address
 	move.w  d6,(VDP_DATA)	; copy the character to VDP
@@ -160,7 +160,7 @@ BuildStatusScreenInventoryLoop:
 	move.l	(a6),a0	; point a0 to the start of the next item name
 	; menu character for next item
 	clr	d6	; lazy way to prevent various bugs
-	move.w	#DIALOG_BASE_TILE_LOW+%0000000001011011,d6
+	move.w	#DIALOG_BASE_TILE_LOW+0000000001011011b,d6
 	move.l	(MEM_DIALOG_VDP),(VDP_CONTROL)	; set VDP address
 	add.l	#$00020000,(MEM_DIALOG_VDP)	; move to the next column
 	move.w  d6,(VDP_DATA)	; copy the character to VDP

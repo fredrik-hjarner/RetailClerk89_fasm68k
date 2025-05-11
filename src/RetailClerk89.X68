@@ -267,5 +267,5 @@ BGM_Day00:
 
 RomEnd:
 	org ROM_ADDR_END
-	dc.b	%11111111
-    end 0
+	dc.b	11111111b
+    ; end 0 ; TODO: What is this?

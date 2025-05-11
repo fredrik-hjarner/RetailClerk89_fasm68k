@@ -32,8 +32,8 @@ SetActiveSpriteLeftHighLow:
 	move.w	d7,d5	; copy the adjusted y value 
 	addq	#$08,d5	; move d5 to bottom edge of lower 1/4
 	; map the sprite y position to a column
-	andi.b	#%11111000,d7	; clear bits 0-2 to round to nearest power of 8
-	andi.b	#%11111000,d5	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d7	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d5	; clear bits 0-2 to round to nearest power of 8
 	cmpi.w	#MAP_MID_X,d6	; is column on the left or right side of the screen?
 	blt.s	.2	; branch if on left side
 	addq	#$0004,d7	; on the right side, use 2nd lword for the column
@@ -58,8 +58,8 @@ SetActiveSpriteRightHighLow:
 	move.w	d7,d5	; copy the adjusted y value 
 	addq	#$08,d5	; move d5 to bottom edge of lower 1/4
 	; map the sprite y position to a column
-	andi.b	#%11111000,d7	; clear bits 0-2 to round to nearest power of 8
-	andi.b	#%11111000,d5	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d7	; clear bits 0-2 to round to nearest power of 8
+	andi.b	#11111000b,d5	; clear bits 0-2 to round to nearest power of 8
 	cmpi.w	#MAP_MID_X,d6	; is column on the left or right side of the screen?
 	blt.s	.4	; branch if on left side
 	addq	#$0004,d7	; on the right side, use 2nd lword for the column
