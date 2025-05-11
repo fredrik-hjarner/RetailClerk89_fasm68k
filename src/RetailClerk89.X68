@@ -1,4 +1,10 @@
 ;*******************************************************************************
+; First enable some fasm68k compatibility settings
+;*******************************************************************************
+
+	m68k.enable compat_vasm_org
+
+;*******************************************************************************
 ; Main code file for RetailClerk89, a personal exercise to learn MD programming.
 ; This might even turn into a real game demo one day.
 ;
