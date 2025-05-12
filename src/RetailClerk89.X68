@@ -9,6 +9,9 @@
 	m68k.enable compat_vasm_and_bug1
 
 	m68k.enable compat_vasm_sub_bug1
+	m68k.enable compat_vasm_sub_bug2
+
+	m68k.enable compat_vasm_or_bug1
 
 	m68k.enable compat_vasm_org
 	; TODO: Maybe I can remove compat_vasm_org_label from the code?

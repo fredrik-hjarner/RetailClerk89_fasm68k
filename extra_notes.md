@@ -120,3 +120,18 @@ prolly label is wrong because of too many or toow few bytes before it.
 02:001FFF3B 0C              	   196:     dcb.b   4, $0C
 02:001FFF3C *
 02:001FFF3F 0B              	   197:     dcb.b   4, $0B
+
+--------------------------------
+================================
+
+## some bytes at 5193d (1448h) diffs
+
+1448: 967C0001  50: sub.w #SPRITE_COLLISION_UP, d3 ; test up from sprite
+
+## some bytes at 5668d (1624h) diffs
+
+1624: 9C7C0001  198: sub.w #SPRITE_COLLISION_LEFT,d6 ; test left from sprite
+
+## some bytes at 7218d (1C32h) diffs
+
+01C32: 8A7C4000 62: or.w #%0100000000000000, d5 ; append sprite width+buffer to bits [9-15]
