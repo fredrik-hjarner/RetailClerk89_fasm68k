@@ -484,5 +484,5 @@ Echo_Init:
 ;****************************************************************************
 
 @Z80Program: incbin "echo_prog-z80.bin"
-@Z80ProgSize equ $-@Z80Program
+@Z80ProgSize := $-@Z80Program
     even

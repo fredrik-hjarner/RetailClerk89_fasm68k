@@ -135,3 +135,85 @@ prolly label is wrong because of too many or toow few bytes before it.
 ## some bytes at 7218d (1C32h) diffs
 
 01C32: 8A7C4000 62: or.w #%0100000000000000, d5 ; append sprite width+buffer to bits [9-15]
+
+----------------------------------
+
+## some bytes at 7416d (1CF8h) diffs
+
+001CF8: B1 FC   00 00   00 00    106: cmp.l #$00000000, a0	; test if there is background music to play
+
+vasm encodes this as:
+; hm seems it tries to encode it as cmpa actually
+;   instr dn  size
+    1011__000_1 ; B1
+;   11 ea=imm
+    11_111100 ; FC
+
+    00000000 ; 00
+    00000000 ; 00
+
+    00000000 ; 00
+    00000000 ; 00
+
+## some bytes at 7432d (1D08h) diffs
+
+001D08: B1F9FFFF019E    111: cmp.l (MEM_SCENE_BGM), a0 ; test if scene BGM is already playing
+
+## some bytes at 7918d (1EEEh) diffs
+
+1EEE: D3FC00020000  122: add.l #$00020000,a1 ; move to the next column
+
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+
+## some bytes at 10402d (28A2h) diffs
+
+028A2: DABC00020000 add.l #$00020000, d5 ; move to index 2
+
+## some bytes at 10416d (28B0h) diffs
+
+028B0: C4BCFFFF0000 and.l #$FFFF0000, d2 ; clear low word
+
+## some bytes at 10424d (28B8h) diffs
+
+028B8: DABC00020000 add.l #$00020000, d5 ; move to index 2
+
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+
+## some bytes at 40202d (9D0Ah) diffs
+
+09D0A: B03C0040 cmp.b #$40, d0 ; Determine whether PCM should be enabled
+
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+
+## some bytes at 40636d (9EBCh) diffs
+
+09EBA:  30 3C  13 FF     move.w #@Z80ProgSize-1, d0 ; Size of Z80 program (DBF adjusted)
+
+vasm encodes this as:
+;   00_size_Xn  M
+    00_11___000_0 ; 30
+;   M  M/Xn=imm
+    00_111100 ; 3C
+; <ea> extension words (in this case imm)
+    00010011 ; 13
+    11111111 ; FF
+
+fasm68k encodes this as:
+    00110000 ; 30
+    00111100 ; 3C
+    11111111 ; FF ; diffs!
+    10000101 ; diffs
+
+
