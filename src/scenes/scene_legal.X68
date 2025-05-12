@@ -55,43 +55,43 @@ SceneLegal:
 	dc.w	$0009	; text count
 
 	dc.l	LegalScreenLine00	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0000000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0000000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$03800000	; initial drawing location
 
 	dc.l	LegalScreenLine01	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$06000000	; initial drawing location
 
 	dc.l	LegalScreenLine02	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$07800000	; initial drawing location
 
 	dc.l	LegalScreenLine03	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$08000000	; initial drawing location
 
 	dc.l	LegalScreenLine04	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$08800000	; initial drawing location
 
 	dc.l	LegalScreenLine05	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0A000000	; initial drawing location
 
 	dc.l	LegalScreenLine06	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0A800000	; initial drawing location
 
 	dc.l	LegalScreenLine07	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0B000000	; initial drawing location
 
 	dc.l	LegalScreenLine08	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0C800000	; initial drawing location
 
 	dc.l	LegalScreenLine09	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0D000000	; initial drawing location
 
 	;---------------------------------------------------------------------------

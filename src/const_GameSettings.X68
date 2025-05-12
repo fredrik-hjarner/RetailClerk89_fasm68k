@@ -72,11 +72,11 @@ SAVE_DATA_LENGTH=SAVE_GAME_END-SAVE_GAME_START
 ;-------------------------------------------------------------------------------
 ; directions
 ;-------------------------------------------------------------------------------
-DIRECTION_DOWN=%0000	; 0
-DIRECTION_UP=%0001		; 1
-DIRECTION_LEFT=%0010	; 2
-DIRECTION_RIGHT=%0011	; 3
-DIRECTION_NULL=%1111	; used for movement patterns
+DIRECTION_DOWN=0000b	; 0
+DIRECTION_UP=0001b		; 1
+DIRECTION_LEFT=0010b	; 2
+DIRECTION_RIGHT=0011b	; 3
+DIRECTION_NULL=1111b	; used for movement patterns
 
 ;-------------------------------------------------------------------------------
 ; sprite settings
@@ -111,8 +111,8 @@ SPRITE_PLANE_OFFSET_RIGHT=$0040	; sprite plane right to display right edge
 ; other sprite/NPC settings
 NPC_RECORD_SIZE=MEM_NPC1_SPRITE_ID-MEM_NPC0_SPRITE_ID
 NPC_SPRITE_MOVE_STEPS=$0009; how many steps NPC sprites take when they move
-PLAYER_BASE_TILE=%0110000100000001 ; pri=0,pal=2,vf=0,hf=0,pattern=101
-NPC0_BASE_TILE=%0110000101110001 ;pri=0,pal=2,vf=0,hf=0,pattern=171
+PLAYER_BASE_TILE=0110000100000001b ; pri=0,pal=2,vf=0,hf=0,pattern=101
+NPC0_BASE_TILE=0110000101110001b ;pri=0,pal=2,vf=0,hf=0,pattern=171
 NPC_BASE_TILE_INC=$0060	; how many tiles to increment between NPCs
 CHARACTER_DEFINITION_SIZE=CharacterDefinitionPlayerEnd-CharacterDefinitionPlayer
 
@@ -159,7 +159,7 @@ OBJ_LIST_STRUCT_SIZE=$0006	; size of the data structure for object list entries
 ;-------------------------------------------------------------------------------
 ; status screen settings
 ;-------------------------------------------------------------------------------
-STATUS_SCREEN_MAP_ICON_BASE_PATTERN=%1110000000010001
+STATUS_SCREEN_MAP_ICON_BASE_PATTERN=1110000000010001b
 STATUS_SCREEN_OBJECTIVE_VDP=VDP_VRAM_WRITE_B+$00020000+$08000000
 STATUS_SCREEN_STOREKEYS_VDP=VDP_VRAM_WRITE_B+$01300000
 STATUS_SCREEN_INVENTORY_VDP=VDP_VRAM_WRITE_B+$00040000+$0B000000

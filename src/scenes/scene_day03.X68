@@ -96,7 +96,7 @@ SceneIntroDay03:
 	dc.w	$0006	; text count
 
 	dc.l	Day03IntroText	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0110000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0110000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$06800000	; initial drawing location
 
 	dc.l	Day03IntroTip0	; location of string to display

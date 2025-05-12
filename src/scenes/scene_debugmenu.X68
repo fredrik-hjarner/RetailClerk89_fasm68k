@@ -33,7 +33,7 @@ SceneDebugMenu:
 	dc.w	$001B	; text count
 
 	dc.l	DebugScreenLine00	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0100000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0100000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A	; initial drawing location
 
 	dc.l	DebugScreenLine01	; location of string to display

@@ -59,102 +59,102 @@ SceneEndingBad0:
 	; background
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000000001	; base pattern
+	dc.w	 0000000000000001b	; base pattern
 	dc.w	$0003	; repeat 4 times
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; frame
 	dc.l	PatternEndingFrameTop	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00100000	; initial drawing location
 
 	dc.l	PatternEndingFrameBottom	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00100000+$07800000	; initial drawing location
 
 	dc.l	PatternEndingFrameLeft	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$00100000	; initial drawing location
 
 	dc.l	PatternEndingFrameRight	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$003E0000	; initial drawing location
 
 	; picture - driveway
 	dc.l	Pattern32x32	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000011001	; base pattern
+	dc.w	 0000000000011001b	; base pattern
 	dc.w	$0001	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$03800000+$00200000	; initial drawing location
 
 	dc.l	Pattern32x32	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000011001	; base pattern
+	dc.w	 0000000000011001b	; base pattern
 	dc.w	$0001	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$03800000+$00280000	; initial drawing location
 
 	; picture - snow
 	dc.l	Pattern32x32	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000101001	; base pattern
+	dc.w	 0000000000101001b	; base pattern
 	dc.w	$0001	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$03800000+$00120000	; initial drawing location
 
 	dc.l	Pattern32x32	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000101001	; base pattern
+	dc.w	 0000000000101001b	; base pattern
 	dc.w	$0001	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$03800000+$001A0000	; initial drawing location
 
 	dc.l	Pattern32x32	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000101001	; base pattern
+	dc.w	 0000000000101001b	; base pattern
 	dc.w	$0001	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$03800000+$002E0000	; initial drawing location
 
 	dc.l	Pattern32x32	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000101001	; base pattern
+	dc.w	 0000000000101001b	; base pattern
 	dc.w	$0001	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$03800000+$00360000	; initial drawing location
 
 	; house siding
 	dc.l	PatternMallExteriorSide	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000111001	; base pattern
+	dc.w	 0000000000111001b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$00800000+$00120000	; initial drawing location
 
 	dc.l	PatternMallExteriorSide	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000111001	; base pattern
+	dc.w	 0000000000111001b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$01800000+$00120000	; initial drawing location
 
 	dc.l	PatternMallExteriorSide	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000111001	; base pattern
+	dc.w	 0000000000111001b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$00800000+$00260000	; initial drawing location
 
 	dc.l	PatternMallExteriorSide	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000111001	; base pattern
+	dc.w	 0000000000111001b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$01800000+$00260000	; initial drawing location
 
 	; door
 	dc.l	PatternEndingBadDoubleDoor	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000111101	; base pattern
+	dc.w	 0000000000111101b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$00800000+$00220000	; initial drawing location
 
@@ -162,7 +162,7 @@ SceneEndingBad0:
 
 	dc.l	Pattern16x16	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000001010110	; base pattern
+	dc.w	 0000000001010110b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$00300000	; initial drawing location
 
@@ -170,13 +170,13 @@ SceneEndingBad0:
 
 	dc.l	Pattern16x32Rotated	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0110000001011010	; base pattern
+	dc.w	 0110000001011010b	; base pattern
 	dc.w	$0000	; repeat 0 times
 	dc.l	VDP_VRAM_WRITE_A+$04000000+$002A0000	; initial drawing location
 
 	dc.l	Pattern16x32Rotated	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0110000001100010	; base pattern
+	dc.w	 0110000001100010b	; base pattern
 	dc.w	$0000	; repeat 0 times
 	dc.l	VDP_VRAM_WRITE_A+$05800000+$00220000	; initial drawing location
 
@@ -186,27 +186,27 @@ SceneEndingBad0:
 	dc.w	$0005	; text count
 
 	dc.l	CreditsScreen00Line00	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0100000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0100000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$08000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line02	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$09000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line03	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0A000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line04	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0B000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line05	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0B800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line1B	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0C800000	; initial drawing location
 
 	;---------------------------------------------------------------------------
@@ -329,32 +329,32 @@ SceneEndingBad1:
 	; background
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000000001	; base pattern
+	dc.w	 0000000000000001b	; base pattern
 	dc.w	$0003	; repeat 4 times
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; frame
 	dc.l	PatternEndingFrameTop	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00100000	; initial drawing location
 
 	dc.l	PatternEndingFrameBottom	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00100000+$07800000	; initial drawing location
 
 	dc.l	PatternEndingFrameLeft	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$00100000	; initial drawing location
 
 	dc.l	PatternEndingFrameRight	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$003E0000	; initial drawing location
 
@@ -362,7 +362,7 @@ SceneEndingBad1:
 
 	dc.l	PatternEndingBadCarpet	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000011001	; base pattern
+	dc.w	 0010000000011001b	; base pattern
 	dc.w	$0002	; repeat 2 times
 	dc.l	VDP_VRAM_WRITE_B+$01800000+$00120000	; initial drawing location
 
@@ -370,19 +370,19 @@ SceneEndingBad1:
 
 	dc.l	Pattern16x32Rotated	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0110000000011110	; base pattern
+	dc.w	 0110000000011110b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_A+$05000000+$00140000	; initial drawing location
 
 	dc.l	Pattern16x32Rotated	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0110000000100110	; base pattern
+	dc.w	 0110000000100110b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_A+$03000000+$002E0000	; initial drawing location
 
 	dc.l	Pattern16x32	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000101110	; base pattern
+	dc.w	 0010000000101110b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_A+$03000000+$00340000	; initial drawing location
 
@@ -390,7 +390,7 @@ SceneEndingBad1:
 
 	dc.l	PatternEndingBadCouch	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000000110110	; base pattern
+	dc.w	 0010000000110110b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$00180000	; initial drawing location
 
@@ -398,13 +398,13 @@ SceneEndingBad1:
 
 	dc.l	Pattern24x24	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000001000010	; base pattern
+	dc.w	 0010000001000010b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$00120000	; initial drawing location
 
 	dc.l	Pattern24x24	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0010000001000010	; base pattern
+	dc.w	 0010000001000010b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_A+$00800000+$00380000	; initial drawing location
 
@@ -414,39 +414,39 @@ SceneEndingBad1:
 	dc.w	$0008	; text count
 
 	dc.l	CreditsScreen00Line07	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0100000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0100000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$08000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line08	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$08800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line09	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$09000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0A	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0A000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0B	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0A800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0C	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0B800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0D	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0C000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0E	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0D000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0F	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0D800000	; initial drawing location
 
 	;---------------------------------------------------------------------------
@@ -568,32 +568,32 @@ SceneEndingBad2:
 	; background
 	dc.l	Pattern32x32Tile	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000000001	; base pattern
+	dc.w	 0000000000000001b	; base pattern
 	dc.w	$0003	; repeat 4 times
 	dc.l	VDP_VRAM_WRITE_B	; initial drawing location
 
 	; frame
 	dc.l	PatternEndingFrameTop	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00100000	; initial drawing location
 
 	dc.l	PatternEndingFrameBottom	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00100000+$07800000	; initial drawing location
 
 	dc.l	PatternEndingFrameLeft	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$00100000	; initial drawing location
 
 	dc.l	PatternEndingFrameRight	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000010001	; base pattern
+	dc.w	 0000000000010001b	; base pattern
 	dc.w	$0000	; no repeat
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$003E0000	; initial drawing location
 
@@ -601,7 +601,7 @@ SceneEndingBad2:
 
 	dc.l	Pattern16x32Rotated	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0110000000011001	; base pattern
+	dc.w	 0110000000011001b	; base pattern
 	dc.w	$0000	; repeat 0 times
 	dc.l	VDP_VRAM_WRITE_A+$03000000+$00160000	; initial drawing location
 
@@ -609,37 +609,37 @@ SceneEndingBad2:
 
 	dc.l	Pattern32x32x3	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000000110001
+	dc.w	 0100000000110001b
 	dc.w	$0000	; repeat 0 times 
 	dc.l	VDP_VRAM_WRITE_B+$01800000+$00120000	; initial drawing location
 
 	dc.l	Pattern32x32x3	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000000110001
+	dc.w	 0100000000110001b
 	dc.w	$0000	; repeat 0 times 
 	dc.l	VDP_VRAM_WRITE_B+$01800000+$00260000	; initial drawing location
 
 	dc.l	Pattern32x32x3	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000000110001
+	dc.w	 0100000000110001b
 	dc.w	$0000	; repeat 0 times 
 	dc.l	VDP_VRAM_WRITE_B+$03800000+$00120000	; initial drawing location
 
 	dc.l	Pattern32x32x3	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000000110001
+	dc.w	 0100000000110001b
 	dc.w	$0000	; repeat 0 times 
 	dc.l	VDP_VRAM_WRITE_B+$03800000+$00260000	; initial drawing location
 
 	dc.l	Pattern32x32x3	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000000110001
+	dc.w	 0100000000110001b
 	dc.w	$0000	; repeat 0 times 
 	dc.l	VDP_VRAM_WRITE_B+$05800000+$00120000	; initial drawing location
 
 	dc.l	Pattern32x32x3	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000000110001
+	dc.w	 0100000000110001b
 	dc.w	$0000	; repeat 0 times 
 	dc.l	VDP_VRAM_WRITE_B+$05800000+$00260000	; initial drawing location
 
@@ -647,13 +647,13 @@ SceneEndingBad2:
 
 	dc.l	Pattern32x32x3	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000100001	; base pattern
+	dc.w	 0000000000100001b	; base pattern
 	dc.w	$0000	; repeat 0 times
 	dc.l	VDP_VRAM_WRITE_B+$00800000+$00120000	; initial drawing location
 
 	dc.l	Pattern32x32x3	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0000000000100001	; base pattern
+	dc.w	 0000000000100001b	; base pattern
 	dc.w	$0000	; repeat 0 times
 	dc.l	VDP_VRAM_WRITE_B+$00800000+$00260000	; initial drawing location
 
@@ -661,14 +661,14 @@ SceneEndingBad2:
 
 	dc.l	Pattern32x16	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0110000001000001
+	dc.w	 0110000001000001b
 	dc.w	$0000	; repeat 0 times 
 	dc.l	VDP_VRAM_WRITE_A+$04000000+$00340000	; initial drawing location
 
 	; picture - hot tub
 	dc.l	Pattern80x32	; location of pattern to load
 	; 		%pccvhnnnnnnnnnnn
-	dc.w	%0100000001001001
+	dc.w	 0100000001001001b
 	dc.w	$0000	; repeat 0 times 
 	dc.l	VDP_VRAM_WRITE_B+$05800000+$001E0000	; initial drawing location
 
@@ -678,35 +678,35 @@ SceneEndingBad2:
 	dc.w	$0007	; text count
 
 	dc.l	CreditsScreen00Line11	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0100000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0100000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$08000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line12	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$09000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line13	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$09800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line14	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0A000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line15	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0A800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line16	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0B800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line17	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0C000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line18	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0C800000	; initial drawing location
 
 	;---------------------------------------------------------------------------
