@@ -55,7 +55,7 @@ SceneStatus:
 	; map
 	dc.l	PatternStatusMap	; location of pattern to load
 	; 		 pccvhnnnnnnnnnnn
-	dc.w	%0110000000000001	; base pattern
+	dc.w	 0110000000000001b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$00800000+$00020000	; initial drawing location
 
@@ -68,7 +68,7 @@ SceneStatus:
 	; mall logo
 	dc.l	Pattern80x16	; location of pattern to load
 	; 		 pccvhnnnnnnnnnnn
-	dc.w	%0110000000010010	; base pattern
+	dc.w	 0110000000010010b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$00800000+$00020000	; initial drawing location
 
@@ -89,12 +89,12 @@ SceneStatus:
 
 	; caption for store keys
 	dc.l	StatusScreenStoreKeys	; location of string to display
-	dc.w	DIALOG_BASE_TILE_LOW+%0110000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE_LOW+0110000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_B+$00800000+$00300000	; initial drawing location
 
 	; caption for map
 	dc.l	StatusScreenYouAreHere	; location of string to display
-	dc.w	DIALOG_BASE_TILE_LOW+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE_LOW+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_B+$00040000+$07000000	; initial drawing location
 
 	; default save message

@@ -59,24 +59,24 @@ EndGameLoadScene:
 ;*******************************************************************************
 ; default text for look events
 ;*******************************************************************************
-	include	'sub_ShowDefaultText.X68'
+	include	'../sub_ShowDefaultText.X68'
 
 ;*******************************************************************************
 ; scene exit actions - a lot of the game flow is in here, probably too much
 ;*******************************************************************************
-	include	'actionscript/ActionScriptSceneExit.X68'
+	include	'ActionScriptSceneExit.X68'
 
 ;*******************************************************************************
 ; process actions based on day and scene, this is effectively the game script
 ;*******************************************************************************
-	include	'actionscript/ActionScriptDay00.X68'
-	include	'actionscript/ActionScriptDay01.X68'
-	include	'actionscript/ActionScriptDay02.X68'
-	include	'actionscript/ActionScriptDay03.X68'
-	include	'actionscript/ActionScriptDay04.X68'
-	include	'actionscript/ActionScriptDay05.X68'
-	include	'actionscript/ActionScriptDay06.X68'
-	include	'actionscript/ActionScriptDay07.X68'
+	include	'ActionScriptDay00.X68'
+	include	'ActionScriptDay01.X68'
+	include	'ActionScriptDay02.X68'
+	include	'ActionScriptDay03.X68'
+	include	'ActionScriptDay04.X68'
+	include	'ActionScriptDay05.X68'
+	include	'ActionScriptDay06.X68'
+	include	'ActionScriptDay07.X68'
 
 ;*******************************************************************************
 ; default event processing routines
@@ -119,6 +119,6 @@ DefaultRadioUse:
 ;*******************************************************************************
 ; default take actions
 ;*******************************************************************************
-	include	'actionscript/ActionScriptDefaultTake.X68'
+	include	'ActionScriptDefaultTake.X68'
 
 

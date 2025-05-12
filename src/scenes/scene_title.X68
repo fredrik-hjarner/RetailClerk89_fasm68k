@@ -129,18 +129,18 @@ SceneTitle:
 
 	; new game text
 	dc.l	TitleScreenTextNewGame	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0110000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0110000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$09800000+$003E0000	; initial drawing location
 
 	; load game text
 	dc.l	TitleScreenTextLoadGame	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0110000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0110000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0A800000+$003E0000	; initial drawing location
 
 	if	_DEBUG_
 	; debug text
 	dc.l	TitleScreenTextDebug	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0110000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0110000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0B800000+$003E0000	; initial drawing location
 	endif
 

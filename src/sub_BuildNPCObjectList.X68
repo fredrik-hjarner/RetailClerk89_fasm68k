@@ -59,13 +59,13 @@ StoreNPC:
 	; word1[9-15]=width (0-127)
 	move.w	(STRUCT_SPRITE_X,a2),d5	; store x position in d5
 	subq	#$0008,d5	; buffer area around sprite
-	or.w	#%0100000000000000,d5	; append sprite width+buffer to bits [9-15]
+	or.w	#0100000000000000b,d5	; append sprite width+buffer to bits [9-15]
 	move.w	d5,(a0)+	; store word 1
 	; word2[0-8]=y0 (0-512)
 	; word2[9-15]=height (0-127)
 	move.w	(STRUCT_SPRITE_Y,a2),d5	; store y position in d5
 	subq	#$0008,d5	; buffer area around sprite
-	or.w	#%0110000000000000,d5	; append sprite height+buffer to bits [9-15]
+	or.w	#0110000000000000b,d5	; append sprite height+buffer to bits [9-15]
 	move.w	d5,(a0)+	; store word 2
 ExitStoreNPC:
 	adda.w	#NPC_RECORD_SIZE,a2	; increment to next NPC

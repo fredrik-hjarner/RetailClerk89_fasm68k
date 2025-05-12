@@ -55,115 +55,115 @@ SceneCredits:
 	dc.w	$001B	; text count
 
 	dc.l	CreditsScreen00Line00	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0110000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0110000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line01	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$00800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line02	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$01000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line03	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$01800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line04	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$02000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line05	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$02800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line06	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$03000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line07	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0000000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0000000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$03800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line08	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$04000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line09	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$04800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0A	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$05000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0B	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$05800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0C	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$06000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0D	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$06800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0E	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$07000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line0F	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$07800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line10	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$08000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line11	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0000000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0000000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$08800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line12	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$09000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line13	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$09800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line14	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0A000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line15	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0A800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line16	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0B000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line17	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0B800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line18	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0C000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line19	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0C800000	; initial drawing location
 
 	dc.l	CreditsScreen00Line1A	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0D000000	; initial drawing location
 
 	dc.l	CreditsScreen00Line1B	; location of string to display
-	dc.w	DIALOG_BASE_TILE+%0010000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE+0010000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_A+$0D800000	; initial drawing location
 
 	;---------------------------------------------------------------------------

@@ -56,7 +56,7 @@ SceneLoad:
 	dc.l	PatternStatusSave	; location of pattern to load
 	; pccvhnnnnnnnnnnn
 	; 0000000000000000	
-	dc.w	DIALOG_BASE_TILE_LOW+%1000000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE_LOW+1000000000000000b	; base pattern
 	dc.w	$0000	; repeat 1 time
 	dc.l	VDP_VRAM_WRITE_B+$06800000+$00100000	; initial drawing location
 
@@ -67,34 +67,34 @@ SceneLoad:
 
 	; caption for save
 	dc.l	LoadScreenCaption	; location of string to display
-	dc.w	DIALOG_BASE_TILE_LOW+%1000000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE_LOW+1000000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_B+$07000000+$00120000	; initial drawing location
 
 	; default save message
 	dc.l	StatusScreenDefaultSave	; location of string to display
-	dc.w	DIALOG_BASE_TILE_LOW+%1000000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE_LOW+1000000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_B+$07800000+$00120000	; initial drawing location
 
 	dc.l	StatusScreenDefaultSave	; location of string to display
-	dc.w	DIALOG_BASE_TILE_LOW+%1000000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE_LOW+1000000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_B+$08000000+$00120000	; initial drawing location
 
 	dc.l	StatusScreenDefaultSave	; location of string to display
-	dc.w	DIALOG_BASE_TILE_LOW+%1000000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE_LOW+1000000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_B+$08800000+$00120000	; initial drawing location
 
 	dc.l	StatusScreenDefaultSave	; location of string to display
-	dc.w	DIALOG_BASE_TILE_LOW+%1000000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE_LOW+1000000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_B+$09000000+$00120000	; initial drawing location
 
 	; help text
 
 	dc.l	LoadScreenHelp0	; location of string to display
-	dc.w	DIALOG_BASE_TILE_LOW+%1110000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE_LOW+1110000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_B+$0A000000+$00100000	; initial drawing location
 
 	dc.l	LoadScreenHelp1	; location of string to display
-	dc.w	DIALOG_BASE_TILE_LOW+%1110000000000000	; base pattern
+	dc.w	DIALOG_BASE_TILE_LOW+1110000000000000b	; base pattern
 	dc.l	VDP_VRAM_WRITE_B+$0A800000+$00100000	; initial drawing location
 
 	;---------------------------------------------------------------------------

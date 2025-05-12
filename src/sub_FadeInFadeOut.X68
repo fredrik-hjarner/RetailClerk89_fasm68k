@@ -18,7 +18,7 @@ LoadSceneFadeInInnerLoop:
 LoadSceneFadeInLsrLoop:
 	lsr.w	#$01,d6	; shift bits to the right to decrease color intensity
 	;	      0000BBBSGGGSRRRS
-	and.w	#%0000111011101110,d6	; prevent color overflow
+	and.w	#0000111011101110b,d6	; prevent color overflow
 	dbf	d2,LoadSceneFadeInLsrLoop	; loop until done shifting
 LoadSceneFadeInWritePaletteEntry:
 	move.w	d6,(VDP_DATA)	; write the palette entry
@@ -46,7 +46,7 @@ FadeOutInnerLoop:
 FadeOutLsrLoop:
 	lsr.w	#$01,d6	; shift bits to the right to decrease color intensity
 	;	      0000BBBSGGGSRRRS
-	and.w	#%0000111011101110,d6	; prevent color overflow
+	and.w	#0000111011101110b,d6	; prevent color overflow
 	dbf	d2,FadeOutLsrLoop	; loop until done shifting
 	move.w	d6,(VDP_DATA)	; write the palette entry
 	move.w	d3,d2	; reset d2

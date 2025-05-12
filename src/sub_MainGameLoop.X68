@@ -40,7 +40,7 @@ SetPausedPaletteLoop:
 	move.w	(a0)+,d1	; get the next palette entry
 	lsr	#1,d1	; shift color intensity
 	;	      0000BBBSGGGSRRRS
-	and.w	#%0000011001100110,d1	; prevent color overflow
+	and.w	#0000011001100110b,d1	; prevent color overflow
 	move.w	d1,(VDP_DATA)	; write the palette entry
 	dbf	d0,SetPausedPaletteLoop	; decrement d0 and loop
 	bra.s	UpdatePause	; save the paused state
